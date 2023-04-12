@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://kit.fontawesome.com/7883008276.js" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="parent_div">
+            <div class="header">Translator</div>
+            <div class="input_parent">
+                <textarea class="input" id="from_input" placeholder="Enter Text..."></textarea>
+                <textarea class="output" id="to_input" placeholder="Translation" readonly></textarea>
+            </div>
+            <div class="controller">
+                <div id="from_input" class="option">
+                    <div class="icons">
+                        <span id="speak_in"><i class="fas fa-volume-up"></i></span>
+                        <span id="copy_input"><i class="fas fa-copy"></i></span>
+                    </div>
+                    <select id="input_type" class="select_common">
+                        <!-- <option value="english">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="french">French</option> -->
+                    </select>
+                </div>
+                <span id="swap_type" onclick="swapValue()"><i class="fas fa-exchange-alt"></i></span>
+                <div id="to_output" class="option">
+                    <select id="output_type" class="select_common">
+                        <!-- <option value="Hindi">Hindi</option>
+                        <option value="english">English</option>
+                        <option value="french">French</option> -->
+                    </select>
+                    <div class="icons">
+                        <span id="speak_op"><i class="fas fa-volume-up"></i></span>
+                        <span id="copy_output"><i class="fas fa-copy"></i></span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <input id="sbmt" type="submit" value="Translate"></input>
+            </div>
+
+        </div>
+    </div>
+    <script src="./countries.js"></script>
+    <script src="https://kit.fontawesome.com/7883008276.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
